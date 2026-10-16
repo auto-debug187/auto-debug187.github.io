@@ -1,0 +1,23 @@
+:root{--bg:#f7f8fa;--fg:#14181f;--mu:#5b6573;--ac:#0a6c74;--card:#fff;--bd:#dfe3e8}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1318;--fg:#e8ebef;--mu:#9aa5b1;--ac:#4fc1c9;--card:#171d24;--bd:#27303a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 "IBM Plex Serif",Georgia,serif}
+h1,h2,h3,nav,.meta,.tags,footer,th{font-family:"IBM Plex Sans",system-ui,sans-serif}
+h1{font-size:2.6rem;line-height:1.1;margin:.2em 0}h2{font-size:1.5rem;margin:2.4em 0 .6em;padding-top:.6em;border-top:1px solid var(--bd)}h3{margin:.2em 0}
+a{color:var(--ac)}.wrap{max-width:920px;margin:0 auto;padding:0 20px 60px}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:20px;flex-wrap:wrap;padding:12px 20px;background:var(--bg);border-bottom:1px solid var(--bd);font-size:.95rem}
+nav a{text-decoration:none;color:var(--mu)}nav a:hover,nav .brand{color:var(--fg)}nav .brand{font-weight:600;margin-right:auto}
+.hero{display:grid;grid-template-columns:1fr 200px;gap:32px;align-items:center;padding:48px 0 8px}
+.hero img{width:200px;height:200px;object-fit:cover;border-radius:50%;border:1px solid var(--bd)}
+@media(max-width:640px){.hero{grid-template-columns:1fr}.hero img{order:-1;width:140px;height:140px}h1{font-size:2rem}}
+.links a{margin-right:14px}.meta{color:var(--mu);font-size:.9rem;margin:.2em 0}.tags{color:var(--ac);font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:14px}
+.card img,figure img,.gallery img,video{width:100%;display:block;border-radius:4px;background:var(--bd)}
+.card img{aspect-ratio:16/9;object-fit:cover;margin-bottom:10px}
+figure{margin:16px 0}figcaption{color:var(--mu);font-size:.85rem;margin-top:6px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gallery img{aspect-ratio:4/3;object-fit:cover}
+table{border-collapse:collapse;width:100%}td,th{text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--bd);vertical-align:top}
+li{margin:.3em 0}footer{text-align:center;color:var(--mu);padding:30px;font-size:.85rem}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
