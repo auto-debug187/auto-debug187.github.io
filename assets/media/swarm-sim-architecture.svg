@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820">
+<style>.t{font:600 24px Arial;fill:#16202a}.s{font:18px Arial;fill:#4b5968}.b{fill:#fff;stroke:#2a6f77;stroke-width:3}.g{fill:#f5fafb;stroke:#8bb8bd;stroke-width:2}.a{stroke:#2a6f77;stroke-width:4;fill:none;marker-end:url(#m)}</style>
+<defs><marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#2a6f77"/></marker></defs>
+<rect width="1500" height="820" fill="#f7f8fa"/>
+<text x="750" y="55" text-anchor="middle" class="t" font-size="34">swarm_sim: system architecture</text>
+<rect x="70" y="120" width="310" height="145" rx="18" class="b"/><text x="225" y="160" text-anchor="middle" class="t">Mission configuration</text><text x="225" y="195" text-anchor="middle" class="s">swarm.yaml / GUI</text><text x="225" y="225" text-anchor="middle" class="s">vehicle count, poses, mission</text>
+<rect x="505" y="105" width="420" height="175" rx="18" class="b"/><text x="715" y="150" text-anchor="middle" class="t">ROS 2 launch + vehicle registry</text><text x="715" y="188" text-anchor="middle" class="s">N namespaces • reusable model registry</text><text x="715" y="218" text-anchor="middle" class="s">frame setup • formation helpers</text><text x="715" y="248" text-anchor="middle" class="s">world / environment selection</text>
+<rect x="1050" y="120" width="370" height="145" rx="18" class="b"/><text x="1235" y="160" text-anchor="middle" class="t">Gazebo Harmonic</text><text x="1235" y="195" text-anchor="middle" class="s">vehicle dynamics + sensors</text><text x="1235" y="225" text-anchor="middle" class="s">physics-based multi-UAV world</text>
+<path d="M380 190 H505" class="a"/><path d="M925 190 H1050" class="a"/>
+<rect x="120" y="400" width="360" height="175" rx="18" class="g"/><text x="300" y="445" text-anchor="middle" class="t">Planner / mission layer</text><text x="300" y="483" text-anchor="middle" class="s">independent trajectory execution</text><text x="300" y="513" text-anchor="middle" class="s">centralized or decentralized planner</text><text x="300" y="543" text-anchor="middle" class="s">formation / waypoint missions</text>
+<rect x="570" y="400" width="360" height="175" rx="18" class="g"/><text x="750" y="445" text-anchor="middle" class="t">DDS vehicle adapter</text><text x="750" y="483" text-anchor="middle" class="s">common command / telemetry API</text><text x="750" y="513" text-anchor="middle" class="s">local ↔ shared ENU frame handling</text><text x="750" y="543" text-anchor="middle" class="s">health + mission state</text>
+<rect x="1020" y="400" width="360" height="175" rx="18" class="g"/><text x="1200" y="445" text-anchor="middle" class="t">ArduPilot SITL × N</text><text x="1200" y="483" text-anchor="middle" class="s">arming • takeoff • velocity / pose</text><text x="1200" y="513" text-anchor="middle" class="s">flight control + failsafes</text><text x="1200" y="543" text-anchor="middle" class="s">DDS telemetry</text>
+<path d="M480 487 H570" class="a"/><path d="M930 487 H1020" class="a"/><path d="M1200 400 C1200 330 1180 310 1180 265" class="a"/>
+<path d="M715 280 C715 330 750 345 750 400" class="a"/>
+<rect x="360" y="660" width="780" height="95" rx="18" class="b"/><text x="750" y="700" text-anchor="middle" class="t">Validation + metrics</text><text x="750" y="732" text-anchor="middle" class="s">trajectory tracking • separation / collision • mission success • frame consistency • planner runtime</text>
+<path d="M750 575 V660" class="a"/>
+</svg>

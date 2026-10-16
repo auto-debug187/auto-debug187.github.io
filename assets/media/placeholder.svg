@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#eef1f4"/>
+<rect x="55" y="55" width="1490" height="790" rx="24" fill="none" stroke="#c7cfd8" stroke-width="4" stroke-dasharray="18 16"/>
+<g fill="#66717d" font-family="Arial, sans-serif" text-anchor="middle">
+<text x="800" y="420" font-size="54" font-weight="700">MEDIA PLACEHOLDER</text>
+<text x="800" y="485" font-size="28">Replace this file in assets/media/</text>
+</g></svg>
